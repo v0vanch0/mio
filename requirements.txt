@@ -15,3 +15,4 @@ wmi
 httpx
 cryptography
 toml
+Eel>=0.16.0
