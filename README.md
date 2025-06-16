@@ -113,6 +113,8 @@ pip install -r requirements.txt
 python tool.py
 # To create a binary distribution, you could:
 python build.py
+# To run the new web interface:
+python web_tool.py
 ````
 ***
 # About
