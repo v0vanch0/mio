@@ -115,17 +115,6 @@ python tool.py
 python build.py
 ````
 ***
-# Contact Us
-***
-### Developer's Email: 3590361911@qq.com
-### QQ Group: 683828484
-### Developer QQ Group:777617022
-***
-# Contributors:
-***
-### [![contributors](https://contrib.rocks/image?repo=ColdWindScholar/MIO-KITCHEN-SOURCE&max=999&column=20)](https://github.com/ColdWindScholar/MIO-KITCHEN-SOURCE/graphs/contributors)
-### Thanks to people like you for helping out!
-***
 # About
 ***
 ### MIO-KITCHEN
