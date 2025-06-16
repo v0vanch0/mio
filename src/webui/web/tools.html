@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <a class="back-link" href="index.html">Back</a>
+        <h1>Tools</h1>
+    </header>
+    <div class="tools-container page">
+        <h2>Boot Tools</h2>
+        <input type="text" id="bootPath" placeholder="Path to boot.img" class="text-input" />
+        <button class="btn" onclick="chooseFile('bootPath')">Browse</button>
+        <button class="btn" onclick="unpackBoot()">Unpack Boot</button>
+        <pre id="toolOutput"></pre>
+        <hr />
+        <input type="text" id="patchBoot" placeholder="Boot img to patch" class="text-input" />
+        <button class="btn" onclick="chooseFile('patchBoot')">Browse</button>
+        <input type="text" id="magiskApk" placeholder="Magisk APK" class="text-input" />
+        <button class="btn" onclick="chooseFile('magiskApk')">Browse</button>
+        <button class="btn" onclick="patchBoot()">Patch Boot with Magisk</button>
+        <pre id="patchOutput"></pre>
+    </div>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="common.js"></script>
+    <script src="tools.js"></script>
+</body>
+</html>

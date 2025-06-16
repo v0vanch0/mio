@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELinux Audit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <a class="back-link" href="index.html">Back</a>
+        <h1>SELinux Audit Allow</h1>
+    </header>
+    <div class="tools-container page">
+        <input type="text" id="logPath" placeholder="Log file" class="text-input" />
+        <button class="btn" onclick="chooseFile('logPath')">Browse</button>
+        <input type="text" id="outDir" placeholder="Output directory" class="text-input" />
+        <button class="btn" onclick="chooseDirectory('outDir')">Browse</button>
+        <button class="btn" onclick="runAudit()">Run</button>
+        <pre id="auditOutput"></pre>
+    </div>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="common.js"></script>
+    <script src="selinux.js"></script>
+</body>
+</html>

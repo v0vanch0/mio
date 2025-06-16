@@ -113,6 +113,16 @@ pip install -r requirements.txt
 python tool.py
 # To create a binary distribution, you could:
 python build.py
+# To run the polished web UI:
+python web_tool.py
+# The interface now mirrors the Qt layout using HTML and CSS.
+# Additional demo pages are available at:
+#  - battery.html
+#  - file_info.html
+#  - tools.html (boot unpack & magisk patch)
+#  - byte_calc.html (byte conversions)
+#  - selinux.html (audit allow generator)
+# File inputs now support native dialogs via the new browse buttons.
 ````
 ***
 # About
