@@ -1,0 +1,130 @@
+body {
+    background: #202020;
+    color: #E6EDED;
+    font-family: 'SF Pro Text', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.menu {
+    text-align: center;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    margin: 10px 0;
+}
+.menu a {
+    color: #E6EDED;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.widget-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17.5px;
+    width: 338px;
+    height: 158px;
+    border-radius: 22px;
+}
+.widget-container .background {
+    position: absolute;
+    width: 338px;
+    height: 158px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(0deg, #9C9C9C, #9C9C9C), rgba(37,37,37,0.55);
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    z-index: 0;
+}
+.device-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+    width: 62px;
+    height: 103px;
+    z-index: 1;
+}
+.track {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 0;
+    top: 0;
+    background: rgba(217,217,217,0.2);
+    border-radius: 100px;
+}
+.progress {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 0;
+    top: 0;
+    background: #34C85A;
+    border-radius: 100px;
+    clip-path: inset(calc(100% - var(--value)) 0 0 0);
+}
+.overlay {
+    position: absolute;
+    width: 6.15px;
+    height: 6.15px;
+    left: calc(50% - 3.075px);
+    top: 0.05px;
+    background: #34C85A;
+    box-shadow: 0.25px 0px 1px rgba(45,45,45,0.039), 2.5px 0px 3px rgba(45,45,45,0.19);
+}
+.device-icon {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: calc(50% - 17px);
+    top: calc(50% - 17px);
+    font-size: 26px;
+    text-align: center;
+    line-height: 34px;
+    color: #E6EDED;
+}
+.reading {
+    width: 62px;
+    height: 24px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 22px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #E6EDED;
+}
+
+.file-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.tools-container h2 {
+    margin: 0;
+    padding-bottom: 5px;
+}
