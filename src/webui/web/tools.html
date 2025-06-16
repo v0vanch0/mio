@@ -7,20 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="tools-container">
+    <header class="top-bar">
+        <a class="back-link" href="index.html">Back</a>
+        <h1>Tools</h1>
+    </header>
+    <div class="tools-container page">
         <h2>Boot Tools</h2>
-        <input type="text" id="bootPath" placeholder="Path to boot.img" />
-        <button onclick="unpackBoot()">Unpack Boot</button>
+        <input type="text" id="bootPath" placeholder="Path to boot.img" class="text-input" />
+        <button class="btn" onclick="chooseFile('bootPath')">Browse</button>
+        <button class="btn" onclick="unpackBoot()">Unpack Boot</button>
         <pre id="toolOutput"></pre>
         <hr />
-        <input type="text" id="patchBoot" placeholder="Boot img to patch" />
-        <input type="text" id="magiskApk" placeholder="Magisk APK" />
-        <button onclick="patchBoot()">Patch Boot with Magisk</button>
+        <input type="text" id="patchBoot" placeholder="Boot img to patch" class="text-input" />
+        <button class="btn" onclick="chooseFile('patchBoot')">Browse</button>
+        <input type="text" id="magiskApk" placeholder="Magisk APK" class="text-input" />
+        <button class="btn" onclick="chooseFile('magiskApk')">Browse</button>
+        <button class="btn" onclick="patchBoot()">Patch Boot with Magisk</button>
         <pre id="patchOutput"></pre>
-        <a href="index.html">Back to Menu</a>
     </div>
 
     <script type="text/javascript" src="/eel.js"></script>
+    <script src="common.js"></script>
     <script src="tools.js"></script>
 </body>
 </html>

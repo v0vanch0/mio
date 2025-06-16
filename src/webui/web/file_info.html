@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="file-info-container">
-        <input type="text" id="filePath" placeholder="Enter file path" />
-        <button onclick="getInfo()">Get Info</button>
+    <header class="top-bar">
+        <a class="back-link" href="index.html">Back</a>
+        <h1>File Info</h1>
+    </header>
+    <div class="file-info-container page">
+        <input type="text" id="filePath" placeholder="Enter file path" class="text-input" />
+        <button class="btn" onclick="chooseFile('filePath')">Browse</button>
+        <button class="btn" onclick="getInfo()">Get Info</button>
         <pre id="infoOutput"></pre>
-        <a href="index.html">Back to Menu</a>
     </div>
 
     <script type="text/javascript" src="/eel.js"></script>
+    <script src="common.js"></script>
     <script src="file_info.js"></script>
 </body>
 </html>

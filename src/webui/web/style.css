@@ -1,12 +1,50 @@
+
+:root {
+    --bg: #202020;
+    --text: #E6EDED;
+    --accent: #34C85A;
+    --font-base: 'SF Pro Text', sans-serif;
+    --font-display: 'SF Pro Display', sans-serif;
+}
+
 body {
-    background: #202020;
-    color: #E6EDED;
-    font-family: 'SF Pro Text', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-base);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    color: var(--text);
+    padding: 8px 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.back-link {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.page {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu {
@@ -73,9 +111,9 @@ body {
     height: 62px;
     left: 0;
     top: 0;
-    background: #34C85A;
     border-radius: 100px;
-    clip-path: inset(calc(100% - var(--value)) 0 0 0);
+    background: conic-gradient(var(--accent) var(--value), rgba(0,0,0,0) var(--value));
+    transform: rotate(-90deg);
 }
 .overlay {
     position: absolute;
@@ -83,7 +121,7 @@ body {
     height: 6.15px;
     left: calc(50% - 3.075px);
     top: 0.05px;
-    background: #34C85A;
+    background: var(--accent);
     box-shadow: 0.25px 0px 1px rgba(45,45,45,0.039), 2.5px 0px 3px rgba(45,45,45,0.19);
 }
 .device-icon {
@@ -100,7 +138,7 @@ body {
 .reading {
     width: 62px;
     height: 24px;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: var(--font-display);
     font-size: 22px;
     line-height: 16px;
     display: flex;
@@ -127,4 +165,27 @@ body {
 .tools-container h2 {
     margin: 0;
     padding-bottom: 5px;
+}
+
+.btn {
+    padding: 6px 12px;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    color: var(--bg);
+    font-family: var(--font-base);
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+.text-input {
+    padding: 4px 6px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: #333;
+    color: var(--text);
+    font-family: var(--font-base);
 }
