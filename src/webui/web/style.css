@@ -1,3 +1,4 @@
+
 :root {
     --bg: #202020;
     --text: #E6EDED;
@@ -16,6 +17,7 @@ body {
     height: 100vh;
     margin: 0;
 }
+
 
 .top-bar {
     position: fixed;

@@ -40,6 +40,7 @@ async function init() {
         device.appendChild(reading);
         container.appendChild(device);
         animate(progress, value);
+
     });
 }
 

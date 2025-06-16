@@ -11,7 +11,9 @@ from src.core.utils import (
     tool_bin,
 )
 from src.core.Magisk import Magisk_patch
+
 from src.core.selinux_audit_allow import main as selinux_audit_allow
+
 
 # Sample battery data used for the demo page
 BATTERIES = [100, 80, 50, 20]
@@ -148,6 +150,7 @@ def run_selinux_audit(log_path: str, output_dir: str):
         return {"result": "ok"}
     except Exception as e:  # pragma: no cover - best effort
         return {"error": str(e)}
+
 
 
 def start():
